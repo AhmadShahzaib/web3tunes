@@ -1,0 +1,249 @@
+{
+  "nfts": [
+    {
+      "ipnft": "bafyreigjsm4uenb6tcu5v33api327mbhkpy2qthocdhugk2fbmjccb3rke",
+      "url": "ipfs://bafyreigjsm4uenb6tcu5v33api327mbhkpy2qthocdhugk2fbmjccb3rke/metadata.json",
+      "data": {
+        "artistEmail": "john@gmail.com",
+        "price": 1,
+        "quantity": 10,
+        "iban": "XXXXXXXXXXXXXXXXXXXXXX",
+        "adminNotes": "sdfsdf",
+        "address": "0x00b782cd845a4a5df7135f66fbcf64bd26fe6b55"
+      },
+      "content": {
+        "version": "0.1",
+        "mimeType": "audio/wav",
+        "artwork": {
+          "mimeType": "image/png",
+          "uri": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+        },
+        "visualizer": {
+          "mimeType": "audio/wav",
+          "uri": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav"
+        },
+        "project": {
+          "artwork": {
+            "mimeType": "image/png",
+            "uri": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+          },
+          "title": "XYZ",
+          "type": "EP"
+        },
+        "key": "2b9cae9b-75d7-0027-fcc5-2664099982e5",
+        "attributes": {
+          "key": "2b9cae9b-75d7-0027-fcc5-2664099982e5",
+          "genre": "Rock",
+          "bpm": 17,
+          "artist": "John",
+          "project": "XYZ",
+          "license": "11111110"
+        },
+        "name": "First Driver",
+        "title": "First Driver",
+        "description": "Some desc",
+        "trackNumber": 1,
+        "genre": "Rock",
+        "bpm": 17,
+        "duration": 7,
+        "locationCreated": "New York",
+        "lyrics": {
+          "text": "xyz"
+        },
+        "artist": "John",
+        "license": "11111110",
+        "isrc": "212365",
+        "animation_url": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "losslessAudio": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "image": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+      },
+      "mint": {
+        "ipnft": "bafyreigjsm4uenb6tcu5v33api327mbhkpy2qthocdhugk2fbmjccb3rke",
+        "url": "ipfs://bafyreigjsm4uenb6tcu5v33api327mbhkpy2qthocdhugk2fbmjccb3rke/metadata.json",
+        "minted": true,
+        "nftId": 0
+      },
+      "id": 1
+    },
+    {
+      "ipnft": "bafyreigpdlevh5dsr3s6qcfkfers5dc2ubukcfqf2oek6odrpztrrf3t2q",
+      "url": "ipfs://bafyreigpdlevh5dsr3s6qcfkfers5dc2ubukcfqf2oek6odrpztrrf3t2q/metadata.json",
+      "data": {
+        "artistEmail": "john@ndfgkjdf.co",
+        "price": 2,
+        "quantity": 17,
+        "iban": "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "adminNotes": "sdfs df d",
+        "address": "0x00b782cd845a4a5df7135f66fbcf64bd26fe6b55"
+      },
+      "content": {
+        "version": "0.1",
+        "mimeType": "audio/wav",
+        "artwork": {
+          "mimeType": "image/png",
+          "uri": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+        },
+        "visualizer": {
+          "mimeType": "audio/wav",
+          "uri": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav"
+        },
+        "project": {
+          "artwork": {
+            "mimeType": "image/png",
+            "uri": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+          },
+          "title": "EPP"
+        },
+        "key": "c5eeef7a-72bd-ffa0-3be6-e95fa01916b6",
+        "attributes": {
+          "key": "c5eeef7a-72bd-ffa0-3be6-e95fa01916b6",
+          "artist": "John",
+          "project": "EPP",
+          "license": "45345"
+        },
+        "name": "2nd Driver",
+        "title": "2nd Driver",
+        "description": "sdfnk sndfk",
+        "trackNumber": 2,
+        "lyrics": {
+          "text": "sdfsdf"
+        },
+        "locationCreated": "New York",
+        "artist": "John",
+        "license": "45345",
+        "animation_url": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "losslessAudio": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "image": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+      },
+      "mint": {
+        "ipnft": "bafyreigpdlevh5dsr3s6qcfkfers5dc2ubukcfqf2oek6odrpztrrf3t2q",
+        "url": "ipfs://bafyreigpdlevh5dsr3s6qcfkfers5dc2ubukcfqf2oek6odrpztrrf3t2q/metadata.json",
+        "minted": true,
+        "nftId": 1
+      },
+      "id": 2
+    },
+    {
+      "ipnft": "bafyreidz3e2hot4gizersutfo5ebaiwndkfatiaqwsbogxbwi64o5bthn4",
+      "url": "ipfs://bafyreidz3e2hot4gizersutfo5ebaiwndkfatiaqwsbogxbwi64o5bthn4/metadata.json",
+      "data": {
+        "artistEmail": "jack@gmail.com",
+        "price": 0,
+        "quantity": 15,
+        "iban": "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "adminNotes": "sdf sdf sdf sd",
+        "address": "0x00b782cd845a4a5df7135f66fbcf64bd26fe6b55"
+      },
+      "content": {
+        "version": "0.1",
+        "mimeType": "audio/wav",
+        "artwork": {
+          "mimeType": "image/png",
+          "uri": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+        },
+        "visualizer": {
+          "mimeType": "audio/wav",
+          "uri": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav"
+        },
+        "project": {
+          "artwork": {
+            "mimeType": "image/png",
+            "uri": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+          },
+          "title": "RRR",
+          "description": "sdf sdf "
+        },
+        "key": "086b84d4-0f06-5273-f489-599b6aee9311",
+        "attributes": {
+          "key": "086b84d4-0f06-5273-f489-599b6aee9311",
+          "genre": "Pop",
+          "artist": "Jack",
+          "project": "RRR",
+          "license": "34234"
+        },
+        "name": "James RRR",
+        "title": "James RRR",
+        "description": "Some desc",
+        "trackNumber": 3,
+        "genre": "Pop",
+        "locationCreated": "London",
+        "lyrics": {
+          "text": "sdfs df sdf s"
+        },
+        "artist": "Jack",
+        "license": "34234",
+        "animation_url": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "losslessAudio": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "image": "ipfs://bafybeiaznfsbtljac3tdvo5lpunzncnlrxikdmczecs7ehxkmdjar5yoe4/artificial-intelligence-chatbot.png"
+      },
+      "mint": {
+        "ipnft": "bafyreidz3e2hot4gizersutfo5ebaiwndkfatiaqwsbogxbwi64o5bthn4",
+        "url": "ipfs://bafyreidz3e2hot4gizersutfo5ebaiwndkfatiaqwsbogxbwi64o5bthn4/metadata.json",
+        "minted": true,
+        "nftId": 2
+      },
+      "id": 3
+    },
+    {
+      "ipnft": "bafyreidvdcnqidjttdvbkidpqbk2brx3ucbu7socwthorzzjdvxypu457m",
+      "url": "ipfs://bafyreidvdcnqidjttdvbkidpqbk2brx3ucbu7socwthorzzjdvxypu457m/metadata.json",
+      "data": {
+        "artistEmail": "jeme@yahoo.com",
+        "price": 0.004,
+        "quantity": 0,
+        "iban": "XXXXXXXXXXXXXXXXXXXXXX",
+        "adminNotes": "fsdf sdf sdf sd",
+        "address": "0x00b782cd845a4a5df7135f66fbcf64bd26fe6b55"
+      },
+      "content": {
+        "version": "0.1",
+        "mimeType": "audio/wav",
+        "artwork": {
+          "mimeType": "image/png",
+          "uri": "ipfs://bafybeien3a22hq6qqwj63kdvmsymowioktft6d3w5tjriqyo5mav3rw4zm/mob-wallpaper.png"
+        },
+        "visualizer": {
+          "mimeType": "audio/wav",
+          "uri": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav"
+        },
+        "project": {
+          "artwork": {
+            "mimeType": "image/png",
+            "uri": "ipfs://bafybeien3a22hq6qqwj63kdvmsymowioktft6d3w5tjriqyo5mav3rw4zm/mob-wallpaper.png"
+          },
+          "title": "RRR",
+          "description": "sdf sdf sd"
+        },
+        "key": "8fedb7b0-e083-77be-c9e5-7efa6ae3a384",
+        "attributes": {
+          "key": "8fedb7b0-e083-77be-c9e5-7efa6ae3a384",
+          "genre": "Rock",
+          "artist": "Jeme",
+          "project": "RRR",
+          "license": "34234"
+        },
+        "name": "Temple",
+        "title": "Temple",
+        "description": "sdf sdf ",
+        "trackNumber": 4,
+        "genre": "Rock",
+        "lyrics": {
+          "text": "sdf sdf "
+        },
+        "locationCreated": "London",
+        "artist": "Jeme",
+        "license": "34234",
+        "animation_url": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "losslessAudio": "ipfs://bafybeigahvvldafzoebuprhtsglshk37q35xwkcm72xqkj7bvzl33iwhtq/bg.wav",
+        "image": "ipfs://bafybeien3a22hq6qqwj63kdvmsymowioktft6d3w5tjriqyo5mav3rw4zm/mob-wallpaper.png"
+      },
+      "mint": {
+        "ipnft": "bafyreidvdcnqidjttdvbkidpqbk2brx3ucbu7socwthorzzjdvxypu457m",
+        "url": "ipfs://bafyreidvdcnqidjttdvbkidpqbk2brx3ucbu7socwthorzzjdvxypu457m/metadata.json",
+        "minted": true,
+        "nftId": 3
+      },
+      "id": 4
+    }
+  ]
+}
