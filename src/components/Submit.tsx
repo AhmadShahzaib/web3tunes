@@ -9,6 +9,7 @@ import { FaEthereum } from 'react-icons/fa';
 import { MdDone } from 'react-icons/md';
 import uuid from 'react-uuid';
 import styled from 'styled-components';
+import { useWeb3 } from '../contexts/Web3Context';
 
 import { useUser } from '@/contexts/UserContext';
 // import IpfsHttpClientLite from 'ipfs-http-client-lite';
@@ -17,6 +18,9 @@ import type { NotificationType } from '@/utils/lib';
 import { getIPFSUrl } from '@/utils/lib';
 
 import Uploader, { FileType } from './Common/Uploader';
+import { formattedNetwork } from '@/libs/magic';
+import { getWeb3 } from '@/libs/web3';
+import { Magic } from 'magic-sdk';
 // import { connected } from 'process';
 
 const FormSteps = styled(Steps)`
@@ -38,7 +42,9 @@ interface ExtendedStepProps extends StepProps {
 
 export default function Submit() {
   const [connected, setConnected] = useState(false);
-  const { user } = useUser();
+  // const  userprop  = useUser();
+  const { user, setUser } = useUser();
+
   // const { disconnect: doDisconnect } = useDisconnect();
 
   const [current, setCurrent] = useState(0);
@@ -50,7 +56,12 @@ export default function Submit() {
   const [adminNotes, setAdminNotes] = useState('');
   const [loading, setLoading] = useState(false);
   const [multiple, setMultiple] = useState(false);
+  const { setWeb3 } = useWeb3();
 
+  const [web3tunesNft, setWeb3tunesNft] = useState<any | null>(null);
+  const [web3TunesMarketplace, setWeb3TunesMarketplace] = useState<any | null>(
+    null
+  );
   const ethInAud = 2199.89;
 
   const [api, contextHolder] = notification.useNotification();
@@ -746,8 +757,30 @@ export default function Submit() {
 
   const items = steps.map((item) => ({ key: item.title, title: item.title }));
   console.log(user);
+  const connect = async () => {
+    try {
+      const magic = new Magic('pk_live_A42DBA0F3A5C362C' as string, {
+        network: formattedNetwork(),
+      });
+      const accounts = await magic.wallet.connectWithUI();
+      if (accounts[0]) {
+        console.log('Logged in user:', accounts[0]);
+        localStorage.setItem('user', accounts[0]);
 
+        // Once user is logged in, re-initialize web3 instance to use the new provider (if connected with third party wallet)
+        const web3 = await getWeb3();
+        setWeb3(web3);
+        setUser(accounts[0]);
+        return true;
+      }
+    } catch (error) {
+      console.error(error);
+      return false
+    }
+  };
   const createNFT = async (nft: any) => {
+  
+    
     console.log("sending nft to save in db")
     console.log("sending nft ======>", nft),
     await axios.post(`${process.env.NEXT_PUBLIC_SERVER_HOST || ''}/nfts`, nft);
@@ -766,13 +799,17 @@ export default function Submit() {
       top: 0,
       behavior: 'smooth',
     });
-
+    let result
     if (current === steps.length - 1) {
       if (!connected || !user) {
-        alert('Please connect to wallet first.');
-        return ;}else  
-         if (connected || user){
-      
+        debugger
+   
+      result =  await connect();}
+    
+        // alert('Please connect to wallet first.');
+       
+      debugger
+if(result){
       console.log({ ...metadata });
       setLoading(true);
       const data = {
@@ -814,8 +851,8 @@ export default function Submit() {
         // window.localStorage.setItem('nfts', JSON.stringify(list));
       }
       setLoading(false);
-    }
-    }
+    }}
+    
   };
 
   const back = () => {

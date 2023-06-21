@@ -151,7 +151,25 @@ export default function NFTDetail() {
       doAsync();
     }
   }, []);
-
+ 
+    const [audRate, setAudRate] = useState(null);
+  
+    useEffect(() => {
+      const fetchExchangeRate = async () => {
+        try {
+          const response = await axios.get(
+            'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=aud'
+          );
+          const data = response.data;
+          const ethAudRate = data.ethereum.aud;
+          setAudRate(ethAudRate);
+        } catch (error) {
+          console.error('Error fetching exchange rate:', error);
+        }
+      };
+  
+      fetchExchangeRate();
+    }, []);
   const [connected, setConnected] = useState(false);
   // const { disconnect: doDisconnect } = useDisconnect();
   const [buying, setBuying] = useState(false);
@@ -257,7 +275,6 @@ export default function NFTDetail() {
     if (!user) {
       await connect();
     }
-
     const web3 = await getWeb3();
     // Get user's Ethereum public address
     const fromAddress = (await web3.eth.getAccounts())[0];
@@ -272,30 +289,23 @@ export default function NFTDetail() {
       console.log(String(nft.data.price));
 
       // buying...
-      console.log(
-        // web3.utils.toWei(
-        String(
-          Number(
-            web3.utils.toWei(String(nft.data.price)) * amount +
-              ((web3.utils.toWei(String(nft.data.price)) * 100) / 1000) *
-                amount +
-              (web3.utils.toWei(String(nft.data.price)) * 25) / 1000
-          )
-        )
-        // )
-      );
+     
+      let valueInWei = Number(
+        web3.utils.toWei(String(nft.data.price)) * amount +
+          ((web3.utils.toWei(String(nft.data.price)) * 100) / 1000) *
+            amount +
+          (web3.utils.toWei(String(nft.data.price)) * 25) / 1000
+      )
+      debugger
+// let stringValue= valueInWei.toString()
+let stringValue= "12510000000"
 
       const tx = await web3TunesMarketplace.methods.buyNFT(id, amount).send({
         from: fromAddress,
         // web3.utils.toWei(
-        value: String(
-          Number(
-            web3.utils.toWei(String(nft.data.price)) * amount +
-              ((web3.utils.toWei(String(nft.data.price)) * 100) / 1000) *
-                amount +
-              (web3.utils.toWei(String(nft.data.price)) * 25) / 1000
-          )
-        ),
+        value: "1251000000000000000",
+          
+        
         // ),
       });
       // eslint-disable-next-line no-console
@@ -304,6 +314,7 @@ export default function NFTDetail() {
       // });
       // await tx.wait();
       console.log('buyNFT tx', tx);
+      debugger
 
       const n = {
         ...nft,
@@ -654,7 +665,7 @@ export default function NFTDetail() {
                       <div className="col-md-12 mt-4">
                         <div className="field-box">
                           <label htmlFor="price" className="form-label">
-                            Quantity
+                            Quantity Avilable : <strong> {nft?.data.quantity}</strong>
                           </label>
                           <input
                             id="price"
@@ -673,7 +684,7 @@ export default function NFTDetail() {
                     {' '}
                     Service fee:{' '}
                     <strong>
-                      0.25% {String((Number(nft?.data.price) * 25) / 1000)} ETH{' '}
+                      0.25% {String((Number(nft?.data.price)*amount * 25) / 1000)} ETH{' '} {String((Number(nft?.data.price)*amount * (audRate? audRate: 230)) )} AUD{' '}
                       {/* {` x ${amount}`} */}
                     </strong>{' '}
                   </span>{' '}

@@ -16,7 +16,7 @@ const NFTDetailPage: NextPage = () => {
         />
       }
     >
-      <Banner />
+      {/* <Banner /> */}
       <NFTDetail />
     </Main>
   );
